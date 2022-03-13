@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <!-- HEADER -->
+  <header id="header">
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <!-- burger button & logo -->
+      <img src="images/icon-menu.svg" alt="menu" class="burger-btn">
+      <a href="#" aria-label="sneakers-logo" class="logo"><img src="images/logo.svg" alt="sneakers"></a>
+      <!-- nav links -->
+      <ul class="nav-links">
+        <li><a href="#" class="nav-link">Collections</a></li>
+        <li><a href="#" class="nav-link">Men</a></li>
+        <li><a href="#" class="nav-link">Women</a></li>
+        <li><a href="#" class="nav-link">About</a></li>
+        <li><a href="#" class="nav-link">Contact</a></li>
+      </ul>
+      <!-- cart & profile icon -->
+      <a href="#" aria-label="cart-icon" class="cart-icon">
+        <div class="cart-amount">1</div>
+        <img src="images/icon-cart.svg" alt="" class="cart-icon">
+      </a>
+      <a href="#" aria-label="profile-icon" class="profile-icon"><img src="images/image-avatar.png" alt=""></a>
+      <!-- cart box -->
+      <div class="cart-box">
+        <div class="cart-head">
+          <strong class="cart-title">Cart</strong>
+        </div>
+        <!-- cart body -->
+        <div class="cart-body">
+          <strong class="empty-txt">Your cart is empty.</strong>
+          <!-- cart lists contain -->
+          <ul class="cart-lists-contain">
+            <!-- cart lists -->
+            <li class="cart-list">
+              <div class="list">
+                <img src="images/image-product-1-thumbnail.jpg" alt="" class="thumb-list">
+                <div class="name-price-list">
+                  <p class="name-list">Autumn Limited Edition Sneakers</p>
+                  <p class="price-list">$125.00 x 3 <span class="total-price">$375.00</span></p>
+                </div>
+                <a href="#" aria-label="delete-list" class="delete-btn">
+                  <img src="images/icon-delete.svg" alt="" class="delete-btn">
+                </a>
+              </div>
+              <a href="#" class="checkout-btn">Checkout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--- MAIN --->
+  <main id="main">
+    <!-- big hero modal for wider screen -->
+    <div class="modal-container">
+      <div class="modal-hero-img-contain">
+        <!-- navigation buttons for modal -->
+        <svg viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg" class="modal-close-btn"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="#FFF" fill-rule="evenodd"/ class="modal-close-btn"></svg>
+
+        <div class="modal-next-btn">
+          <svg viewBox="0 0 13 18" xmlns="http://www.w3.org/2000/svg"><path d="m2 1 8 8-8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+        </div>
+        <div class="modal-previous-btn">
+          <svg viewBox="0 0 12 18" xmlns="http://www.w3.org/2000/svg"><path d="M11 1 3 9l8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+        </div>
+        <!-- big image -->
+        <div class="modal-big-hero-img-contain">
+          <img src="images/image-product-1.jpg" alt="">
+          <img src="images/image-product-2.jpg" alt="">
+          <img src="images/image-product-3.jpg" alt="">
+          <img src="images/image-product-4.jpg" alt="">
+        </div>
+        <!-- thumbnail images for wider screen -->
+        <div class="modal-thumbs-contain">
+          <div class="modal-thumb"><img src="images/image-product-1-thumbnail.jpg" alt=""></div>
+          <div class="modal-thumb"><img src="images/image-product-2-thumbnail.jpg" alt=""></div>
+          <div class="modal-thumb"><img src="images/image-product-3-thumbnail.jpg" alt=""></div>
+          <div class="modal-thumb"><img src="images/image-product-4-thumbnail.jpg" alt=""></div>
+        </div>
+      </div>
+    </div>
+     <!--- PRODUCT SECTION --->
+    <section class="product-section">
+      <!-- product hero images -->
+      <div class="hero-img-contain">
+        <!-- navigation buttons for smaller screen -->
+        <div class="next-btn">
+          <svg viewBox="0 0 13 18" xmlns="http://www.w3.org/2000/svg"><path d="m2 1 8 8-8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+        </div>
+        <div class="previous-btn">
+          <svg viewBox="0 0 12 18" xmlns="http://www.w3.org/2000/svg"><path d="M11 1 3 9l8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+        </div>
+        <!-- big image -->
+        <div class="big-hero-img-contain">
+          <!--<img src="images/image-product-1.jpg" alt="" id="cloneLast">-->
+            <img src="images/image-product-1.jpg" alt="">
+            <img src="images/image-product-2.jpg" alt="">
+            <img src="images/image-product-3.jpg" alt="">
+            <img src="images/image-product-4.jpg" alt="">
+            <!--<img src="images/image-product-1.jpg" alt="" id="cloneFirst">-->
+        </div>
+        <!-- thumbnail images for wider screen -->
+        <div class="thumbs-contain">
+          <div class="thumb active"><img src="images/image-product-1-thumbnail.jpg" alt=""></div>
+          <div class="thumb"><img src="images/image-product-2-thumbnail.jpg" alt=""></div>
+          <div class="thumb"><img src="images/image-product-3-thumbnail.jpg" alt=""></div>
+          <div class="thumb"><img src="images/image-product-4-thumbnail.jpg" alt=""></div>
+        </div>
+      </div>
+      <!-- product information -->
+      <div class="product-info-contain">
+        <h1>Sneaker Company</h1>
+        <h2>Fall Limited Edition Sneakers</h2>
+        <p class="info-txt">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+        <!-- pricing -->
+        <div class="pricing-contain">
+          <div>
+            <p class="price-discount">$125.00</p>
+            <p class="discount">50%</p>
+          </div>
+          <p class="priced">$250.00</p>
+        </div>
+        <!-- total and add product button -->
+        <div class="total-contain">
+          <!-- total product -->
+          <div class="total-product">
+            <div class="min-btn">
+              <svg width="12" height="4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M11.357 3.332A.641.641 0 0 0 12 2.69V.643A.641.641 0 0 0 11.357 0H.643A.641.641 0 0 0 0 .643v2.046c0 .357.287.643.643.643h10.714Z" id="a"/></defs><use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#a"/></svg>
+            </div>
+            <span class="total-txt">0</span>
+            <div class="plus-btn">
+              <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M12 7.023V4.977a.641.641 0 0 0-.643-.643h-3.69V.643A.641.641 0 0 0 7.022 0H4.977a.641.641 0 0 0-.643.643v3.69H.643A.641.641 0 0 0 0 4.978v2.046c0 .356.287.643.643.643h3.69v3.691c0 .356.288.643.644.643h2.046a.641.641 0 0 0 .643-.643v-3.69h3.691A.641.641 0 0 0 12 7.022Z" id="b"/></defs><use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#b"/></svg>
+            </div>
+
+          </div>
+          <!-- add to cart button -->
+          <a href="#" class="add-to-cart-btn"><img src="images/icon-cart-light.svg" alt="" class="add-to-cart">Add to cart</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <script src="main.js"></script>
+</body>
+</html>
