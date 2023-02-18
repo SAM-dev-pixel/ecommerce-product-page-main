@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid greenyellow;
 }
 
 :root {
@@ -49,12 +48,12 @@ a {
   top: 0;
   left: 0;
   right: 0;
+  padding: 1.25em;
   z-index: 99;
 }
 .navbar {
   max-width: 69.375rem;
   margin: auto;
-  padding: 1.25em;
   display: flex;
   align-items: center;
   gap: 0.75em;
@@ -134,7 +133,7 @@ a {
   position: relative;
 }
 .cart-icon img {
-  width: 1.4rem;
+  width: 1.375rem;
 }
 .cart-amount {
   color: var(--white);
@@ -160,13 +159,16 @@ a {
   transform: scale(1.25);
 }
 .profile-icon img {
-  width: 1.5rem;
+  width: clamp(1.5rem, 5vw, 3.125rem);
   transition: 0.2s;
   border-radius: 50%;
 }
 
 /*--- responsive ---*/
 @media (min-width: 48em) {
+  #header {
+    padding-block: 0;
+  }
   .burger-btn {
     display: none;
   }
@@ -210,17 +212,11 @@ a {
     width: 100%;
     height: 0.3rem;
   }
-  .cart-icon img {
-    width: 1.5rem;
-  }
-  .profile-icon img {
-    width: clamp(1.5rem, 5vw, 3rem);
-  }
 }
 
 /*=== MAIN & PRODUCT SECTION STYLES ===*/
 .product-section {
-  max-width: 67rem;
+  max-width: 63.375rem;
   margin-inline: auto;
   padding-bottom: 3rem;
   position: relative;
@@ -282,12 +278,12 @@ a {
 @media (min-width: 48em) {
   #main {
     min-height: 90vh;
+    padding: 4.69em 1.25em;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   .product-section {
-    padding: 5em 1.25em;
     display: flex;
     align-items: center;
   }
@@ -352,17 +348,17 @@ a {
 }
 
 /*--- product information styles ---*/
-h1 {
+.head-title {
   color: var(--orange);
-  font-size: clamp(0.82rem, 3vw, 1rem);
+  font-size: clamp(0.75rem, 3vw, 0.875rem);
   font-weight: 700;
   letter-spacing: 2px;
   margin-bottom: 0.75em;
   text-transform: uppercase;
 }
-h2 {
+.main-title {
   color: var(--very-dark-blue);
-  font-size: clamp(1.75rem, 5vw, 3rem);
+  font-size: clamp(1.75rem, 5vw, 2.75rem);
   font-weight: 700;
   line-height: 1.2;
 }
@@ -449,7 +445,6 @@ h2 {
 /*-- responsive -->*/
 @media (min-width: 48em) {
   .info-txt {
-    font-size: 1.125rem;
     line-height: 1.5;
     margin-top: 2em;
   }
@@ -619,7 +614,6 @@ h2 {
     justify-content: center;
     position: absolute;
     top: 40%;
-    /*transform: translateY(-50%);*/
     background: var(--white);
     border-radius: 50%;
     z-index: 1;
